@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31205.134
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageSplitter", "ImageSplitter\ImageSplitter.csproj", "{4AF78E31-AEFE-4DAC-A8EF-F00530FCC13A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ImageSplitter", "ImageSplitter\ImageSplitter.csproj", "{4AF78E31-AEFE-4DAC-A8EF-F00530FCC13A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageSplitterTest", "ImageSplitterTest\ImageSplitterTest.csproj", "{66C59FDF-A6FC-4CC3-AAAF-799BA15A9E1E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ImageSplitterTest", "ImageSplitterTest\ImageSplitterTest.csproj", "{66C59FDF-A6FC-4CC3-AAAF-799BA15A9E1E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample", "Sample\Sample.csproj", "{1CE96C6F-DF68-4FE4-89BF-49CA7CCC6A5C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{66C59FDF-A6FC-4CC3-AAAF-799BA15A9E1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{66C59FDF-A6FC-4CC3-AAAF-799BA15A9E1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{66C59FDF-A6FC-4CC3-AAAF-799BA15A9E1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CE96C6F-DF68-4FE4-89BF-49CA7CCC6A5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CE96C6F-DF68-4FE4-89BF-49CA7CCC6A5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CE96C6F-DF68-4FE4-89BF-49CA7CCC6A5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CE96C6F-DF68-4FE4-89BF-49CA7CCC6A5C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
