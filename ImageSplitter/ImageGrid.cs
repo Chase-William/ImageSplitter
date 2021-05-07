@@ -26,8 +26,12 @@ namespace ImageSplitter
         /// <param name="rows">Number of rows to be divided into equally.</param>
         /// <param name="columns">Number of columns to be divided into equally.</param>
         /// <exception cref="ImageSubsetExtractionException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"></exception>
         public ImageGrid(string fileName, int rows, int columns)
         {
+            if (rows < 0 || columns < 0)
+                throw new ArgumentOutOfRangeException($"Parameter row and column must both be greater or equal to 0.");
+
             using (SKBitmap bmp = SKBitmap.Decode(fileName)) // Automatically cleanup
             {
                 SKBitmap[,] bitmaps = new SKBitmap[rows, columns];
@@ -109,6 +113,12 @@ namespace ImageSplitter
         /// <param name="fileName">Where to be saved.</param>
         /// <param name="format">File extension to be used.</param>
         /// <param name="quality">Percentage of quality to be saved with.</param>
+        /// <exception cref="UnauthorizedAccessException"></exception>
+        /// <exception cref="ArgumentException"></exception>
+        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="PathTooLongException"></exception>
+        /// <exception cref="DirectoryNotFoundException"></exception>
+        /// <exception cref="NotSupportedException"></exception>      
         public static void SaveBitmaps(SKBitmap[,] bitmaps, string fileName, SKEncodedImageFormat format, int quality)
         {
             int rows = bitmaps.GetLength(0);
