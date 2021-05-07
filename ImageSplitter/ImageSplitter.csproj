@@ -2,6 +2,15 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageId>ImageSplitter</PackageId>
+    <Version>1.0.0</Version>
+    <PackageProjectUrl>https://github.com/ChaseRoth/ImageSplitter</PackageProjectUrl>
+    <Authors>Chase Roth</Authors>
+    <Company>N/A</Company>
+    <PackageTags>ImageSplitter Image Split Splitter ImageDivider Divide</PackageTags>
+    <Description>A simple cross-platform image splitting library. Currently you can only split images into a number of equal sized rows and columns.</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Copyright>Copyright (c) Chase Roth cxr6988@rit.edu</Copyright>
   </PropertyGroup>
 
   <ItemGroup>
