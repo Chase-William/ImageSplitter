@@ -2,6 +2,10 @@
 
 A simple cross-platform image splitting library. Currently you can only split images into a number of equal sized rows and columns.
 
+## Dependencies:
+
+- <a href="https://github.com/mono/SkiaSharp/releases/tag/v2.80.2">SkiaSharp v2.80.2</a>
+
 ## Example Usage
 
 ```cs
