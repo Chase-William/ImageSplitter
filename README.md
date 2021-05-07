@@ -10,9 +10,9 @@ A simple cross-platform image splitting library. Currently you can only split im
 
 ```cs
 // Create disposible imagegrid
-using var splitter = new ImageGrid("../../../../resources/nature.bmp", rows: 4, columns: 4);
-// Save all split parts to file with the name <"myImage"-r<row>-c<column>>
-splitter.SaveBitmaps("myImage", SkiaSharp.SKEncodedImageFormat.Png, quality: 55);
+using var splitter = new ImageGrid("yourInputFileNameHere", rows: 4, columns: 4);
+// Save all split parts to file with the name <"saveName"-r<row>-c<column>>
+splitter.SaveBitmaps("saveName", SkiaSharp.SKEncodedImageFormat.Png, quality: 55);
 ```
 
 The `ImageGrid` class implements the `IDisposible` interface because it contains a 2d array of all the smaller bmp's which are extracted from the original. These bitmaps themselves implement the `IDisposible` interface and must be clean-up.
