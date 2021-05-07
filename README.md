@@ -11,4 +11,4 @@ using var splitter = new ImageGrid("../../../../resources/nature.bmp", rows: 4, 
 splitter.SaveBitmaps("myImage", SkiaSharp.SKEncodedImageFormat.Png, quality: 55);
 ```
 
-The `ImageGrid` implements the IDisposible because it contains a 2d array of all the smaller bmp's which are extracted from the original.
+The `ImageGrid` class implements the `IDisposible` interface because it contains a 2d array of all the smaller bmp's which are extracted from the original. These bitmaps themselves implement the `IDisposible` interface and must be clean-up.
